@@ -1,0 +1,41 @@
+
+\usepackage{ifthen}
+
+
+\newcommand{\setdoclang}[2]
+{
+    \main@language{#2}
+    \def\doclang{#2}
+    \def\doclangshort{#1}
+}
+
+%\setdoclang{en}{english}
+
+%
+% Multilingual support commands
+%
+\newcommand{\langif}[3]
+{
+    \ifthenelse{\equal{#1}{\doclang} \OR \equal{#1}{\doclangshort}}
+        {#2}
+        {#3}
+}
+
+\newcommand{\lang}[2]{\langif{#1}{#2}{}}
+\newcommand{\sectionlang}[2]{\lang{#1}{\section{#2}}}
+\newcommand{\subsectionlang}[2]{\lang{#1}{\subsection{#2}}}
+\newcommand{\subsubsectionlang}[2]{\lang{#1}{\subsubsection{#2}}}
+
+\newcommand{\frametitlelang}[2]{
+ \lang{#1}{
+ \frametitle{#2}}
+ }
+
+% new macro
+%\newcommand{\frametitlelang}[2]
+%{ 
+% \lang{#1}{
+%  \frametitle{#2}
+%  }
+%}
+
