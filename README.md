@@ -9,7 +9,7 @@ The solution is based upon [TEX StackExchange answer](http://tex.stackexchange.c
 
 %enables babel to every lang supported by your document
 
-`\usepackage[italian,englishlithuanian]{babel}` 
+`\usepackage[italian,english,lithuanian]{babel}` 
 
 `\usepackage{multilanguage}`
 
