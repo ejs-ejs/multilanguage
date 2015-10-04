@@ -1,3 +1,37 @@
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\ProvidesPackage{multilanguage}[Create a document in one of multiple languages]
+
+%% USAGE
+%% enable babel to every lang supported by your document
+%%
+%% \usepackage[italian,english,lithuanian]{babel}`
+%% \usepackage{multilanguage}
+%%
+%% set short and long language codes. The second one must be known by babel
+%% This will be the language of current document
+%%
+%% \setdoclang{it}{italian} 
+%% %\setdoclang{en}{english}
+%% %\setdoclang{lt}{lithuanian}
+%%
+%% Strings will be displayed only in a certain language
+%% \lang{it}{Questa stringa appare solo in italiano.}
+%% \lang{en}{This string shows up only in English.}
+%% \lang{lt}{Ši eilutė bus tik lietuviškame tekste.}
+%%
+%% When you have only two languages, you can simply rely on this if-else construct
+%%
+%% \langif{lt}{Ši eilutė bus tik lietuviškame tekste.}{This is for any language different from Lithuanian.}
+%%
+%%
+%% Additon for Beamer package:
+%%
+%% \frametitlelang - frame title in particular language, use inside \frame{}
+%%
+%% \frame{\frametitlelang{lt}{Literatūra: papildomas sąrašas}
+%% \frametitlelang{en}{Literature: supplementary list}}
+%%
+
 
 \usepackage{ifthen}
 
@@ -31,11 +65,5 @@
  \frametitle{#2}}
  }
 
-% new macro
-%\newcommand{\frametitlelang}[2]
-%{ 
-% \lang{#1}{
-%  \frametitle{#2}
-%  }
-%}
+
 
