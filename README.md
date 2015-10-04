@@ -1,7 +1,7 @@
 # multilanguage
 This is the multilanguage.sty package for LaTeX
 
-The solution is based upon [TEX StackExchange answer](http://tex.stackexchange.com/questions/5076/is-it-possible-to-keep-my-translation-together-with-original-text/31401#31401) by [Riccardo](http://tex.stackexchange.com/users/7537/riccardo). Apparently, this user prefers to keep an air of mystery about them.
+The solution is based upon [TEX StackExchange answer](http://tex.stackexchange.com/questions/5076/is-it-possible-to-keep-my-translation-together-with-original-text/31401#31401) by [Riccardo](http://tex.stackexchange.com/users/7537/riccardo). Apparently, this user prefers to keep an air of mystery.
 
 ** Usage: **
 
