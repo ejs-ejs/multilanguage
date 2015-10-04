@@ -5,24 +5,28 @@ The solution is based upon [TEX StackExchange answer](http://tex.stackexchange.c
 
 Usage:
 `% MULTILINGUAL SUPPORT`
-`\usepackage[italian,englishlithuanian]{babel}` %enables babel to every lang supported by your document
-`\usepackage{multilanguage}` % import the file with the above definitions
-`%\setdoclang{it}{italian}` % set short and long language codes
-                         % the second one must be known by babel
+%enables babel to every lang supported by your document
+`\usepackage[italian,englishlithuanian]{babel}` 
+`\usepackage{multilanguage}`
+% set short and long language codes
+% the second one must be known by babel
+`%\setdoclang{it}{italian}` 
 `%\setdoclang{en}{english}`
 `\setdoclang{lt}{lithuanian}`
 `% END MULTILINGUAL SUPPORT`
 ...
 % Sections, subsections, subsubsections:
-`\sectionlang{it}{Sezione 1}` % in the first parameter you can freely use
-                            % both short or long language codes
+% in the first parameter you can freely use both short or long language codes
+`\sectionlang{it}{Sezione 1}` 
 `\sectionlang{english}{Section 1}`
 
 % Strings that are displayed only in a certain language
 `\lang{it}{Questa stringa appare solo in italiano.}`
 `\lang{en}{This string shows up only in English.}`
 `\lang{lt}{Ši eilutė bus tik lietuviškame tekste.}`
-% When you have only two languages, you can simply rely on this if-else
-% construct
+
+
+% When you have only two languages, you can simply rely on this if-else construct
+
 `\langif{it}{If vero: questo e' italiano.}{Else: this is for any language
 different from Italian.}`
